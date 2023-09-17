@@ -1,54 +1,48 @@
 $primary-main-color: #003459;
-$primary-light-color: #0078CD;
-$primary-dark-color: #00528C;
-$primary-darker-color: #002A48;
-$primary-contrast-text: #FFFFFF;
+$primary-light-color: #0078cd;
+$primary-dark-color: #00528c;
+$primary-darker-color: #002a48;
+$primary-contrast-text: #ffffff;
 
-
-$secondary-main-color: #F7DBA7;
-$secondary-light-color: #FCEED5;
-$secondary-dark-color: #F1D092; 
-$secondary-darker-color: #EEC77E; 
+$secondary-main-color: #f7dba7;
+$secondary-light-color: #fceed5;
+$secondary-dark-color: #f1d092;
+$secondary-darker-color: #eec77e;
 $secondary-contrast-text: #003459;
 
-$error-main-color: #FF564F;
-$error-light-color: "" ;
-$error-dark-color: "" ; 
-$error-dark-color: "" ; 
-$error-darker-color: "" ; 
-$error-contrast-text: #FDFDFD;
+$error-main-color: #ff564f;
+$error-light-color: '';
+$error-dark-color: '';
+$error-dark-color: '';
+$error-darker-color: '';
+$error-contrast-text: #fdfdfd;
 
+$success-main-color: #34c759;
+$success-light-color: '';
+$success-dark-color: '';
+$success-dark-color: '';
+$success-darker-color: '';
+$success-contrast-text: #fdfdfd;
 
-$success-main-color: #34C759;
-$success-light-color: "" ;
-$success-dark-color: "" ; 
-$success-dark-color: "" ; 
-$success-darker-color: "" ; 
-$success-contrast-text: #FDFDFD;
+$warning-main-color: #ff912c;
+$warning-light-color: '';
+$warning-dark-color: '';
+$warning-darker-color: '';
+$warning-contrast-text: #fdfdfd;
 
+$info-main-color: #00a7e7;
+$info-light-color: '';
+$info-dark-color: '';
+$info-darker-color: '';
+$info-contrast-text: #fdfdfd;
 
-$warning-main-color: #FF912C;
-$warning-light-color: "" ;
-$warning-dark-color: "" ; 
-$warning-darker-color: "" ; 
-$warning-contrast-text: #FDFDFD;
-
-
-$info-main-color: #00A7E7;
-$info-light-color: "" ;
-$info-dark-color: "" ; 
-$info-darker-color: "" ; 
-$info-contrast-text: #FDFDFD;
-
-
-$neutrol-100-color: #00171F;
-$neutrol-80-color: #242B33;
+$neutrol-100-color: #00171f;
+$neutrol-80-color: #242b33;
 $neutrol-60-color: #667479;
-$neutrol-40-color: #99A2A5;
-$neutrol-20-color: #CCD1D2;
-$neutrol-10-color: #EBEEEF;
-$neutrol-00-color: #FDFDFD;
-
+$neutrol-40-color: #99a2a5;
+$neutrol-20-color: #ccd1d2;
+$neutrol-10-color: #ebeeef;
+$neutrol-00-color: #fdfdfd;
 
 $text-primary: $neutrol-60-color;
 $text-secondary: $neutrol-60-color;
@@ -60,7 +54,4 @@ $disabled-background-color: $neutrol-20-color;
 
 $default-layout-width: 1440px;
 $min-width-layout: 414px;
-$font-family: "SVNGilroy", sans-serif;
-
-
-
+$font-family: 'SVNGilroy', sans-serif;
