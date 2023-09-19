@@ -1,0 +1,30 @@
+.container {
+    max-width: $default-layout-width;
+    margin: 0 auto;
+}
+.background-container {
+    background-image: url('./../../assets/images/backgroundBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $secondary-light-color;
+    border-radius: 0 0 40px 40px;
+}
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 50%);
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.test-card {
+    min-width: 185px;
+}
+.main {
+    min-height: 100vh;
+}

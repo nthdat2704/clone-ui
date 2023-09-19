@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+}
+a.container {
+    display: inline-flex;
+}
+.icon {
+    display: flex;
+}
+
+.pill {
+    border-radius: 50px;
+}
+
+.rounded {
+    border-radius: 50%;
+    padding: 12px !important;
+    min-width: 48px !important;
+}
+
+.large {
+    padding: 14px 28px 10px 28px;
+    min-width: 164px;
+}
+.medium {
+    padding: 14px 28px 10px 28px;
+    min-width: 160px;
+}
+.small {
+    padding: 14px 28px 10px 28px;
+    min-width: 156px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.text,
+.outlined,
+.contained {
+    color: $primary-main-color;
+}
+.text {
+    background-color: transparent !important;
+    &.primary {
+        color: $primary-main-color;
+    }
+    &.secondary {
+        color: $secondary-main-color;
+    }
+    &.disabled {
+        color: $neutrol-20-color !important;
+    }
+}
+.outlined {
+    background-color: transparent !important;
+    border: 1px solid $primary-main-color;
+    &.primary {
+        color: $primary-main-color;
+        border: 1px solid $primary-main-color;
+    }
+    &.secondary {
+        color: $secondary-main-color;
+        border: 1px solid $secondary-main-color;
+    }
+    &.disabled {
+        color: $neutrol-60-color !important;
+        border: 1px solid $neutrol-60-color !important;
+    }
+}
+.contained {
+    background-color: $primary-main-color;
+    &.primary {
+        color: $primary-contrast-text;
+    }
+    &.secondary {
+        color: $secondary-contrast-text;
+    }
+    &.disabled {
+        border: unset !important;
+        background-color: $neutrol-20-color !important;
+        color: $neutrol-60-color !important;
+    }
+}
+.fullWidth {
+    width: 100%;
+}
+
+.primary {
+    background-color: $primary-main-color;
+}
+.secondary {
+    background-color: $secondary-main-color;
+}

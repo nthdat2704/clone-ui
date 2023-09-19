@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container-input {
+    padding: 14px 0;
+    padding-left: 44px;
+    padding-right: 44px;
+    color: $neutrol-40-color;
+    border: 1px solid $neutrol-40-color;
+    border-radius: 8px;
+}
+.input-group {
+    position: relative;
+}
+.fullWidth {
+    width: 100%;
+}
+.helper-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: $neutrol-60-color;
+}
+.icon {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.start-icon {
+    left: 15px;
+}
+.end-icon {
+    right: 15px;
+}
+.helper-text {
+    margin-top: 10px;
+    display: flex;
+    gap: 6px;
+}
+
+.error-icon {
+    display: flex;
+}
+.error {
+    color: $error-main-color;
+}

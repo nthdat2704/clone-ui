@@ -1,0 +1,132 @@
+.container {
+    background-color: $secondary-light-color;
+    border-radius: 40px 40px 0px 0px;
+    padding: 40px 130px 20px 130px;
+}
+.container-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid $neutrol-20-color;
+}
+.register__container {
+    padding: 32px;
+    background-color: $primary-main-color;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+.register__left {
+    max-width: 390px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $neutrol-00-color;
+}
+
+.register__right {
+    display: flex;
+    gap: 12px;
+    background-color: $primary-contrast-text;
+    padding: 12px;
+    flex: 1;
+    border-radius: 14px;
+    .register-input {
+        padding: 14px 28px;
+        flex: 1;
+    }
+    .register-button {
+        border-radius: 8px;
+        font-size: 16px;
+    }
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    &-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        max-width: 402px;
+        width: 100%;
+    }
+    &-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+}
+.container-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    .copyright {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $neutrol-60-color;
+    }
+    .logo {
+        max-width: 115px;
+        max-height: 40px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .privacy {
+        color: $neutrol-60-color;
+        display: flex;
+        align-items: center;
+        gap: 36px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .register__left {
+        max-width: 278px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .register__left {
+        max-width: unset;
+    }
+    .register__right {
+        width: 100%;
+        flex-direction: column;
+    }
+    .register__container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+    .container {
+        padding: 40px 16px 0 16px;
+    }
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-left {
+        max-width: unset;
+        gap: 40px;
+    }
+    .contact-right {
+        justify-content: center;
+    }
+    .container-bottom {
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 32px;
+        .privacy {
+            gap: 12px;
+        }
+    }
+
+    .copyright {
+        display: none;
+    }
+}
