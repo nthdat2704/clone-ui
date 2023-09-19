@@ -6,7 +6,6 @@ import { Button } from '@/shared/components/button/button';
 import { ArrowRightIcon } from '@/shared/icons';
 // import { animal } from '@/shared/assets/images/animal-1.png';
 import { animal1, animal2, animal3, animal4, animal5, animal6, animal7, animal8 } from '@/shared/assets/images';
-import test from '@/shared/assets/images/photo-1694823925781-61293d74cace.avif';
 
 import { Card } from '@/shared/components/card/card';
 
@@ -20,7 +19,7 @@ const data = [
     },
     {
         id: 2,
-        imageUrl: test,
+        imageUrl: animal2,
         title: 'MO502 - Poodle Tiny Yellow',
         price: '3.900.000 VND',
     },
