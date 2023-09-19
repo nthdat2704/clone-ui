@@ -1,0 +1,101 @@
+.container {
+    padding: 40px 130px;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.heading-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.title {
+}
+.sub-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.heading-right {
+}
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+.banner {
+    background-color: #ffb775;
+    border-radius: 20px;
+    // min-height: 378px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    background-image: url(./../../shared/assets/images/banner-pet-seller.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .banner-left {
+        max-width: 448px;
+        width: 100%;
+        margin-left: 80px;
+        margin-top: 60px;
+    }
+    .title {
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 68px;
+    }
+    .sub-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        margin-bottom: 8px;
+    }
+    .body {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 42px;
+    }
+    .action {
+        display: flex;
+        gap: 20px;
+    }
+    img {
+        position: relative;
+        z-index: 10;
+    }
+}
+// .block-right {
+//     width: 787.54px;
+//     height: 787.54px;
+//     background-color: red;
+//     border-radius: 99px;
+//     opacity: 30%;
+//     transform: rotate(151.75deg);
+//     position: absolute;
+//     top: 168px;
+//     left: 584.26px;
+//     z-index: 0;
+// }
+// .block-left {
+//     width: 782.29px;
+//     height: 635px;
+//     background-color: yellow;
+//     opacity: 30%;
+//     transform: rotate(154.77deg);
+//     border-radius: 99px;
+//     position: absolute;
+//     top: -226px;
+//     left: -208px;
+// }

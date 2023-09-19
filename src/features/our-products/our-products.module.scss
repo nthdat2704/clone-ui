@@ -1,0 +1,39 @@
+.container {
+    padding: 60px 0;
+}
+.container-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.heading-bottom {
+    font-size: 24px;
+}
+
+.container-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container-right-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .container-bottom {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-bottom {
+        gap: 12px;
+    }
+    .container-right {
+        display: none;
+    }
+    .container-right-mobile {
+        margin-top: 16px;
+    }
+}
