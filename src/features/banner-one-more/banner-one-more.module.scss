@@ -1,17 +1,20 @@
-.container {
-}
 .container-wrapper {
-    background-image: url(./../../shared/assets/images/banner-one-more.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $primary-main-color;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
     padding-top: 36px;
+    padding-left: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    img {
+        object-fit: cover;
+    }
 }
 .banner-right {
     max-width: 404px;
+    width: 100%;
+    text-align: end;
 }
 .title {
     font-size: 52px;
@@ -33,5 +36,86 @@
 }
 .action {
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
+}
+
+.banner-right {
+    position: relative;
+    margin-right: 72px;
+}
+.banner-right-content {
+    position: relative;
+    z-index: 2;
+}
+.banner-left {
+    img {
+        position: relative;
+        z-index: 2;
+    }
+}
+.banner-right-block {
+    width: 782.29px;
+    height: 635px;
+    background-color: $secondary-light-color;
+    border-radius: 99px;
+    position: absolute;
+    top: -244px;
+    right: -206px;
+    transform: rotate(25.23deg);
+}
+.banner-left-block {
+    width: 787.54px;
+    height: 787.54px;
+    background-color: $primary-darker-color;
+    border-radius: 99px;
+    position: absolute;
+    top: 168px;
+    left: -194px;
+    transform: rotate(28.25deg);
+}
+@media screen and (max-width: 1023px) {
+    .banner-right {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-right-block {
+        width: 605.03px;
+        height: 635px;
+        border-radius: 75px;
+        top: -300px;
+        left: -148px;
+        transform: rotate(11.4deg);
+    }
+    .banner-left-block {
+        width: 787.54px;
+        height: 787.54px;
+        border-radius: 99px;
+        top: unset;
+        bottom: -690px;
+        transform: rotate(28.25deg);
+    }
+    .title {
+        font-size: 36px;
+        line-height: 54px;
+    }
+    .sub-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .body {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .banner-right {
+        margin: 0 auto;
+        max-width: 342px;
+        text-align: center;
+    }
+    .container-wrapper {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
 }

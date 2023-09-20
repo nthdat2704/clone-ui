@@ -58,13 +58,6 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
             <div className={cx('background-container')}>
                 <Header />
                 <Banner />
-                {/* <Container>
-                    <div className={cx('test')}>
-                        {data.map((item) => (
-                            <Card data={item} className={cx('test-card')} />
-                        ))}
-                    </div>
-                </Container> */}
             </div>
             <main className={cx('main')}>{children}</main>
             <Footer />
