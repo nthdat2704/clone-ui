@@ -4,16 +4,7 @@ import classNames from 'classnames/bind';
 import { Container } from '@/shared/components/container/container';
 import { Button } from '@/shared/components/button/button';
 import { ArrowRightIcon, PlayIcon } from '@/shared/icons';
-import {
-    brand1,
-    brand2,
-    brand3,
-    brand4,
-    brand5,
-    brand6,
-    brand7,
-    hand,
-} from '@/shared/assets/images';
+import { brand1, brand2, brand3, brand4, brand5, brand6, brand7, hand } from '@/shared/assets/images';
 import Image from 'next/image';
 type PetSellerProps = {};
 const cx = classNames.bind(styles);
@@ -43,7 +34,11 @@ export const PetSeller = (props: PetSellerProps) => {
                 </div>
                 <div className={cx('brand-logo')}>
                     {brands.map((item) => {
-                        return <Image src={item.imageUrl} alt="brand" />;
+                        return (
+                            <div className={cx('brand-logo-wrapper')}>
+                                <Image src={item.imageUrl} alt="brand" />
+                            </div>
+                        );
                     })}
                 </div>
                 <div className={cx('banner')}>
@@ -51,8 +46,7 @@ export const PetSeller = (props: PetSellerProps) => {
                         <h1 className={cx('title')}>Adoption</h1>
                         <h3 className={cx('sub-title')}>We need help. so do they.</h3>
                         <div className={cx('body')}>
-                            Adopt a pet and give it a home, it will be love you back
-                            unconditionally.
+                            Adopt a pet and give it a home, it will be love you back unconditionally.
                         </div>
                         <div className={cx('action')}>
                             <Button variant="contained">Explore Now</Button>

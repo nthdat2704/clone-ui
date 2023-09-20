@@ -5,6 +5,7 @@ import { Whatsnew } from '@/features/whatsnew/whatsnew';
 import { BannerOneMore } from '@/features/banner-one-more/banner-one-more';
 import OutProducts from '@/features/our-products/our-products';
 import { PetSeller } from '@/features/pet-seller/pet-seller';
+import { PetKnowledge } from '@/features/pet-knowledge/pet-knowledge';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,6 +16,7 @@ export default function Home() {
             <BannerOneMore />
             <OutProducts />
             <PetSeller />
+            <PetKnowledge />
         </>
     );
 }

@@ -25,11 +25,17 @@ import brand6 from './brand-6.png'
 import brand7 from './brand-7.png'
 import hand from './hand.png'
 import bannerPet from './banner-pet-seller.png'
+import knowlege1 from './knowlegge-1.png'
+import knowlege2 from './knowledge-2.png'
+import knowlege3 from './knowledge-3.png'
 
 
 export {
     animal1, animal10, animal11,
     animal12, animal13, animal14, animal15,
     animal16, animal2, animal3, animal4, animal5,
-    animal6, animal7, animal8, animal9, bannerOneMore, bannerOneMoreHuman, brand1, brand2, brand3, brand4, brand5, brand6, brand7, hand, bannerPet
+    animal6, animal7, animal8, animal9, bannerOneMore,
+    bannerOneMoreHuman, brand1, brand2, brand3, brand4, brand5,
+    brand6, brand7, hand, bannerPet, knowlege1,
+    knowlege2, knowlege3
 }
