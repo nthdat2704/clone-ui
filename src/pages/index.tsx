@@ -1,8 +1,8 @@
-import { BannerOneMore } from '@/features/banner-one-more/banner-one-more';
-import OutProducts from '@/features/our-products/our-products';
-import { PetKnowledge } from '@/features/pet-knowledge/pet-knowledge';
-import { PetSeller } from '@/features/pet-seller/pet-seller';
-import { Whatsnew } from '@/features/whatsnew/whatsnew';
+import { BannerOneMore } from '@/features/home-features/banner-one-more/banner-one-more';
+import { OutProducts } from '@/features/home-features/our-products/our-products';
+import { PetKnowledge } from '@/features/home-features/pet-knowledge/pet-knowledge';
+import { PetSeller } from '@/features/home-features/banner-one-more/pet-seller/pet-seller';
+import { Whatsnew } from '@/features/home-features/whatsnew/whatsnew';
 import { BannerLayout } from '@/shared/layouts/banner-layout/banner-layout';
 
 export default function Home() {

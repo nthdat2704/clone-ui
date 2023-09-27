@@ -67,7 +67,7 @@ const data = [
         gift: true,
     },
 ];
-const OutProducts = (props: OutProductsProps) => {
+export const OutProducts = (props: OutProductsProps) => {
     return (
         <section className={cx('container')}>
             <Container>
@@ -96,5 +96,3 @@ const OutProducts = (props: OutProductsProps) => {
         </section>
     );
 };
-
-export default OutProducts;
