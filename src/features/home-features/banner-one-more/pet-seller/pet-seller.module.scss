@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(./../../shared/assets/images/banner-pet-seller.png);
+    background-image: url('./../../../../shared/assets/images/banner-pet-seller.png');
     background-size: cover;
     background-repeat: no-repeat;
     .banner-left {
@@ -81,29 +81,6 @@
         z-index: 10;
     }
 }
-// .block-right {
-//     width: 787.54px;
-//     height: 787.54px;
-//     background-color: red;
-//     border-radius: 99px;
-//     opacity: 30%;
-//     transform: rotate(151.75deg);
-//     position: absolute;
-//     top: 168px;
-//     left: 584.26px;
-//     z-index: 0;
-// }
-// .block-left {
-//     width: 782.29px;
-//     height: 635px;
-//     background-color: yellow;
-//     opacity: 30%;
-//     transform: rotate(154.77deg);
-//     border-radius: 99px;
-//     position: absolute;
-//     top: -226px;
-//     left: -208px;
-// }
 
 @media screen and (max-width: 767px) {
     .container {
