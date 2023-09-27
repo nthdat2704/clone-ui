@@ -1,5 +1,4 @@
-import banner from '@/shared/assets/images/banner.png';
-import block from '@/shared/assets/images/block.png';
+import human from '@/shared/assets/images/human.png';
 import { PlayIcon } from '@/shared/icons';
 import classNames from 'classnames/bind';
 import Image from 'next/image';
@@ -29,7 +28,9 @@ export const Banner = (props: BannerProps) => {
                         </div>
                     </div>
                     <div className={cx('banner__right')}>
-                        <Image className={cx('human')} src={banner} alt="banner" />
+                        <Image className={cx('banner-image')} src={human} alt="banner" />
+                        <div className={cx('banner-block-primary')}></div>
+                        <div className={cx('banner-block-secondary')}></div>
                     </div>
                 </div>
             </Container>

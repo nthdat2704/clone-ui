@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 767px) {
     .banner-right-block {
-        width: 605.03px;
+        width: 820px;
         height: 635px;
         border-radius: 75px;
         top: -300px;
@@ -117,5 +117,11 @@
     .container-wrapper {
         flex-direction: column-reverse;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .banner-right-block {
+        width: 605.03px;
     }
 }
