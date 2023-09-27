@@ -13,7 +13,7 @@ const cx = classNames.bind(styles);
 
 export const Header = (props: HeaderProps) => {
     return (
-        <header>
+        <header className={cx('header__container')}>
             <Container>
                 <div className={cx('header__content')}>
                     <div className={cx('header__left')}>

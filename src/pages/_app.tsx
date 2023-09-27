@@ -1,10 +1,15 @@
 import '@/styles/app.scss';
+import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
-import { MainLayout } from '@/shared/layouts/main-layout/main-layout';
-export default function App({ Component, pageProps }: AppProps) {
-    return (
-        <MainLayout>
-            <Component {...pageProps} />
-        </MainLayout>
-    );
+import { ReactElement, ReactNode } from 'react';
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+    getLayout?: (page: ReactElement) => ReactNode;
+};
+
+type AppPropsWithLayout = AppProps & {
+    Component: NextPageWithLayout;
+};
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
+    const getLayout = Component.getLayout || ((page: ReactElement) => page);
+    return getLayout(<Component {...pageProps} />);
 }

@@ -1,0 +1,48 @@
+.container {
+    max-width: $default-layout-width;
+    margin: 0 auto;
+}
+.background-container {
+    background-color: $secondary-light-color;
+    border-radius: 0 0 40px 40px;
+    position: relative;
+    overflow: hidden;
+}
+.main {
+    min-height: 100vh;
+}
+.background-block-top,
+.background-block-bottom {
+    width: 635px;
+    height: 635px;
+    position: absolute;
+    border-radius: 99px;
+}
+.background-block-top {
+    background-color: $secondary-main-color;
+    top: -594px;
+    left: -230px;
+    transform: rotate(25.23deg);
+}
+.background-block-bottom {
+    background-color: $secondary-main-color;
+    opacity: 40%;
+    bottom: -627px;
+    left: 32px;
+    transform: rotate(56.47deg);
+    // -56.47°
+}
+@media screen and (max-width: 767px) {
+    .background-block-top,
+    .background-block-bottom {
+        border-radius: 66px;
+    }
+    .background-block-top {
+        top: -583px;
+        left: -260px;
+        transform: rotate(19.42deg);
+    }
+    .background-block-bottom {
+        display: none;
+    }
+}

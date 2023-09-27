@@ -1,5 +1,6 @@
-.container {
-    background-color: red;
+.header__container {
+    position: relative;
+    z-index: 10;
 }
 .logo {
     max-width: 115px;
@@ -101,5 +102,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 14px 0;
     }
 }
