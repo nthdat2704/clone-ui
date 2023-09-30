@@ -26,7 +26,7 @@ export const OutProducts = (props: OutProductsProps) => {
                 </div>
                 <div className={cx('container-bottom')}>
                     {products.map((item) => {
-                        return <Card data={item} />;
+                        return <Card className={cx('product')} fullWidth={true} data={item} />;
                     })}
                 </div>
                 <div className={cx('container-right-mobile')}>

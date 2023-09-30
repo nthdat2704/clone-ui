@@ -53,7 +53,6 @@
 }
 .product {
     width: calc(calc((100% - var(--total-spacing)) / var(--column))) !important;
-    min-height: 378px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -90,9 +89,6 @@
             --spacing: 10px;
             gap: 10px;
         }
-    }
-    .product {
-        min-height: unset !important;
     }
 }
 @media screen and (max-width: 413px) {

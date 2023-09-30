@@ -79,7 +79,7 @@ export const Whatsnew = (props: WhatsnewProps) => {
                 </div>
                 <div className={cx('container-bottom')}>
                     {data.map((item) => {
-                        return <Card data={item} />;
+                        return <Card fullWidth={true} className={cx('product')} data={item} />;
                     })}
                 </div>
                 <div className={cx('container-right-mobile')}>
