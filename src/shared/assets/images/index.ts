@@ -29,6 +29,7 @@ import knowlege1 from './knowlegge-1.png'
 import knowlege2 from './knowledge-2.png'
 import knowlege3 from './knowledge-3.png'
 import human from './human.png'
+import dogs from './dogs.png'
 
 
 export {
@@ -38,5 +39,5 @@ export {
     animal6, animal7, animal8, animal9, bannerOneMore,
     bannerOneMoreHuman, brand1, brand2, brand3, brand4, brand5,
     brand6, brand7, hand, bannerPet, knowlege1,
-    knowlege2, knowlege3, human
+    knowlege2, knowlege3, human, dogs
 }
