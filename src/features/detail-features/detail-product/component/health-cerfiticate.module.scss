@@ -1,0 +1,28 @@
+.health {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 9px 12px;
+    background-color: $secondary-light-color;
+    border-radius: 10px;
+    margin-top: 18px;
+    &-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &-text {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $primary-main-color;
+    }
+    &-icon {
+        display: flex;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

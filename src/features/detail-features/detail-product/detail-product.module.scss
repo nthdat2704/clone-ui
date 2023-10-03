@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    padding: 22px 20px;
+    gap: 34px;
+    border: 1px solid $neutrol-10-color;
+    border-radius: 20px;
+}
+.slider {
+    max-width: 560px;
+    width: 100%;
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        margin-top: 18px;
+        &-icon {
+            display: flex;
+        }
+        &-heading {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px; /* 142.857% */
+            color: $primary-darker-color;
+            display: flex;
+            gap: 8px;
+        }
+        &-list {
+            display: flex;
+            gap: 18px;
+        }
+        &-item {
+            display: flex;
+            color: $neutrol-40-color;
+        }
+    }
+}
+.product {
+    flex: 1;
+    .breadcrumbs {
+        margin-bottom: 20px;
+    }
+    &-id {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        color: $neutrol-40-color;
+    }
+    &-name {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 6px;
+    }
+    &-price {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 18px;
+    }
+    &-action {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+    &-row-group {
+        padding: 8px 0;
+        border-bottom: 1px solid $neutrol-10-color;
+        display: flex;
+    }
+    &-heading {
+        max-width: 194px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $neutrol-60-color;
+    }
+    &-desc {
+        flex: 1;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $neutrol-60-color;
+    }
+    .health-mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .slider {
+        max-width: unset;
+        .health {
+            display: none;
+        }
+    }
+    .product {
+        .health-mobile {
+            display: flex;
+        }
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        border: unset;
+    }
+}
