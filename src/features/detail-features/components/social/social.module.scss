@@ -1,0 +1,25 @@
+.social {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    margin-top: 18px;
+    &-icon {
+        display: flex;
+    }
+    &-heading {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px; /* 142.857% */
+        color: $primary-darker-color;
+        display: flex;
+        gap: 8px;
+    }
+    &-list {
+        display: flex;
+        gap: 18px;
+    }
+    &-item {
+        display: flex;
+        color: $neutrol-40-color;
+    }
+}

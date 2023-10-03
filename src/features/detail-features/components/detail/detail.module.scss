@@ -1,0 +1,46 @@
+.product {
+    &-id {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        color: $neutrol-40-color;
+    }
+    &-name {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 6px;
+    }
+    &-price {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 18px;
+    }
+    &-action {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+    &-row-group {
+        padding: 8px 0;
+        border-bottom: 1px solid $neutrol-10-color;
+        display: flex;
+    }
+    &-heading {
+        max-width: 194px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $neutrol-60-color;
+    }
+    &-desc {
+        flex: 1;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $neutrol-60-color;
+    }
+}

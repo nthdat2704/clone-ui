@@ -59,11 +59,6 @@ export const ourSliders = [
         imageUrl: sliderImage.slider5,
         alt: 'image',
     },
-    {
-        id: 5,
-        imageUrl: sliderImage.slider6,
-        alt: 'image',
-    },
 
 
 ];

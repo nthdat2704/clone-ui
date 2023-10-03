@@ -8,12 +8,16 @@ type BreadCrumbsItem = {
 };
 type BreadCrumbsProps = {
     data: BreadCrumbsItem[];
+    className?: any;
 };
 const cx = classNames.bind(styles);
 
-export const BreadCrumbs = ({ data = [] }: BreadCrumbsProps) => {
+export const BreadCrumbs = ({ data = [], className }: BreadCrumbsProps) => {
+    const classes = cx('breadcrumbs', {
+        className: className,
+    });
     return (
-        <ul className={cx('breadcrumbs')}>
+        <ul className={classes}>
             {data.map((item) => {
                 return (
                     <li className={cx('breadcrumbs-item')}>
