@@ -1,11 +1,10 @@
-import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './pet-knowledge.module.scss';
-import { Container } from '@/shared/components/container/container';
 import { Button } from '@/shared/components/button/button';
+import { Container } from '@/shared/components/container/container';
 import { ArrowRightIcon } from '@/shared/icons';
-import { Card } from './components/card/card';
 import { news } from '@/shared/mockup';
+import classNames from 'classnames/bind';
+import { Card } from '../card/card';
+import styles from './pet-knowledge.module.scss';
 type PetKnowledgeProps = {};
 
 const cx = classNames.bind(styles);

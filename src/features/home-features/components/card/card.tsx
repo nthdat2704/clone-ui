@@ -1,7 +1,5 @@
-import { knowlege1, knowlege2 } from '@/shared/assets/images';
 import classNames from 'classnames/bind';
 import Image from 'next/image';
-import React from 'react';
 import styles from './card.module.scss';
 
 type CardData = {

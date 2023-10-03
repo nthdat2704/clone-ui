@@ -1,11 +1,10 @@
-import React from 'react';
-import styles from './banner-one-more.module.scss';
-import classNames from 'classnames/bind';
-import { Container } from '@/shared/components/container/container';
 import { Button } from '@/shared/components/button/button';
+import { Container } from '@/shared/components/container/container';
 import { PlayIcon } from '@/shared/icons';
-import { bannerOneMoreHuman, bannerOneMore } from '@/shared/assets/images';
+import classNames from 'classnames/bind';
 import Image from 'next/image';
+import { bannersImage } from '../../assets';
+import styles from './banner-one-more.module.scss';
 const cx = classNames.bind(styles);
 type BannerOneMoreProps = {};
 
@@ -15,7 +14,7 @@ export const BannerOneMore = (props: BannerOneMoreProps) => {
             <div className={cx('container')}>
                 <div className={cx('container-wrapper')}>
                     <div className={cx('banner-left')}>
-                        <Image src={bannerOneMoreHuman} alt="banner" />
+                        <Image src={bannersImage.image1} alt="banner" />
                     </div>
                     <div className={cx('banner-right')}>
                         <div className={cx('banner-right-content')}>

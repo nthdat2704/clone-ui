@@ -1,10 +1,10 @@
-import { hand } from '@/shared/assets/images';
 import { Button } from '@/shared/components/button/button';
 import { Container } from '@/shared/components/container/container';
 import { ArrowRightIcon, PlayIcon } from '@/shared/icons';
 import { brands } from '@/shared/mockup';
 import classNames from 'classnames/bind';
 import Image from 'next/image';
+import { bannersImage } from '../../assets';
 import styles from './pet-seller.module.scss';
 type PetSellerProps = {};
 const cx = classNames.bind(styles);
@@ -47,7 +47,7 @@ export const PetSeller = (props: PetSellerProps) => {
                             </Button>
                         </div>
                     </div>
-                    <Image src={hand} alt="image" />
+                    <Image src={bannersImage.image2} alt="image" />
                     <div className={cx('block-left')}></div>
                     <div className={cx('block-right')}></div>
                 </div>
