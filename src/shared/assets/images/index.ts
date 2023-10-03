@@ -36,6 +36,11 @@ import slider3 from './slider-3.png'
 import slider4 from './slider-4.png'
 import slider5 from './slider-5.png'
 import slider6 from './slider-6.png'
+import ourSlider1 from './our-slider-1.png'
+import ourSlider2 from './our-slider-2.png'
+import ourSlider3 from './our-slider-3.png'
+import ourSlider4 from './our-slider-4.png'
+import ourSlider5 from './our-slider-5.png'
 
 
 export {
@@ -46,5 +51,6 @@ export {
     bannerOneMoreHuman, brand1, brand2, brand3, brand4, brand5,
     brand6, brand7, hand, bannerPet, knowlege1,
     knowlege2, knowlege3, human, dogs, slider1,
-    slider2, slider3, slider4, slider5, slider6
+    slider2, slider3, slider4, slider5, slider6,
+    ourSlider1, ourSlider2, ourSlider3, ourSlider4, ourSlider5
 }
