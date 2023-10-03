@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from '@/shared/icons';
 import Image from 'next/image';
 import logo from '@/shared/assets/images/logo.png';
+import { socialList } from '@/shared/mockup';
 type FooterProps = {};
 
 const cx = classNames.bind(styles);
@@ -16,12 +17,6 @@ const contactList = [
     { name: 'Category', url: '/category' },
     { name: 'About', url: '/about' },
     { name: 'Contact', url: '/contact' },
-];
-const socialList = [
-    { icon: <FacebookIcon />, url: '/' },
-    { icon: <TwitterIcon />, url: '/twitter' },
-    { icon: <InstagramIcon />, url: '/instagram' },
-    { icon: <YoutubeIcon />, url: '/youtube' },
 ];
 
 export const Footer = (props: FooterProps) => {
