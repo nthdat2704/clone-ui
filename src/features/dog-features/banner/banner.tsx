@@ -7,6 +7,8 @@ import Image from 'next/image';
 import { Button } from '@/shared/components/button/button';
 import { PlayIcon } from '@/shared/icons';
 import { dogs } from '@/shared/assets/images';
+import { BreadCrumbs } from '@/shared/components/breadcrumbs/breadcrumbs';
+import { breadcrumbs } from '@/shared/mockup';
 
 type Props = {};
 const cx = classNames.bind(styles);
@@ -14,17 +16,7 @@ const cx = classNames.bind(styles);
 export const Banner = (props: Props) => {
     return (
         <Container className={cx('container')}>
-            <ul className={cx('breadcrumbs')}>
-                <li className={cx('breadcrumbs-item')}>
-                    <Link href="/">Home</Link>
-                </li>
-                <li className={cx('breadcrumbs-item')}>
-                    <Link href="/">Dog</Link>
-                </li>
-                <li className={cx('breadcrumbs-item')}>
-                    <Link href="/">Small</Link>
-                </li>
-            </ul>
+            <BreadCrumbs data={breadcrumbs} />
             <div className={cx('banner')}>
                 <div className={cx('banner-left')}>
                     <Image className={cx('banner-image')} src={dogs} alt="banner" />

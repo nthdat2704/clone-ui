@@ -1,0 +1,9 @@
+.breadcrumbs {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 12px;
+    &-item {
+        color: $neutrol-40-color;
+    }
+}
