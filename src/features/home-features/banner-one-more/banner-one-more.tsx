@@ -11,8 +11,8 @@ type BannerOneMoreProps = {};
 
 export const BannerOneMore = (props: BannerOneMoreProps) => {
     return (
-        <div className={cx('container')}>
-            <Container>
+        <Container>
+            <div className={cx('container')}>
                 <div className={cx('container-wrapper')}>
                     <div className={cx('banner-left')}>
                         <Image src={bannerOneMoreHuman} alt="banner" />
@@ -36,7 +36,7 @@ export const BannerOneMore = (props: BannerOneMoreProps) => {
                     <div className={cx('banner-left-block')}></div>
                     <div className={cx('banner-right-block')}></div>
                 </div>
-            </Container>
-        </div>
+            </div>
+        </Container>
     );
 };

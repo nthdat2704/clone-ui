@@ -12,12 +12,18 @@ type CardData = {
 };
 type CardProps = {
     data: CardData;
+    fullWidth?: boolean;
+    className?: any;
 };
 const cx = classNames.bind(styles);
 
-export const Card = ({ data }: CardProps) => {
+export const Card = ({ data, fullWidth = false, className }: CardProps) => {
+    const classes = cx('card', {
+        fullWidth,
+        [className]: className,
+    });
     return (
-        <div className={cx('card-container')}>
+        <div className={classes}>
             <div className={cx('card-media')}>
                 <Image src={data.urlImage} alt="image" />
             </div>

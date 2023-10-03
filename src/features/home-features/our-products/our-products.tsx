@@ -1,18 +1,16 @@
-import React from 'react';
-import styles from './our-products.module.scss';
-import classNames from 'classnames/bind';
-import { Container } from '@/shared/components/container/container';
 import { Button } from '@/shared/components/button/button';
+import { Container } from '@/shared/components/container/container';
+import { ListProduct } from '@/shared/components/list-product/list-product';
 import { ArrowRightIcon } from '@/shared/icons';
-import { Card } from '@/shared/components/card/card';
-import { animal10, animal11, animal12, animal15, animal16, animal3, animal4, animal9 } from '@/shared/assets/images';
 import { products } from '@/shared/mockup';
+import classNames from 'classnames/bind';
+import styles from './our-products.module.scss';
 const cx = classNames.bind(styles);
 type OutProductsProps = {};
 export const OutProducts = (props: OutProductsProps) => {
     return (
-        <section className={cx('container')}>
-            <Container>
+        <Container>
+            <div className={cx('container')}>
                 <div className={cx('container-top')}>
                     <div className={cx('container-left')}>
                         <span className={cx('heading-top')}>Hard to choose right products for your pets?</span>
@@ -24,17 +22,13 @@ export const OutProducts = (props: OutProductsProps) => {
                         </Button>
                     </div>
                 </div>
-                <div className={cx('container-bottom')}>
-                    {products.map((item) => {
-                        return <Card className={cx('product')} fullWidth={true} data={item} />;
-                    })}
-                </div>
+                <ListProduct data={products} />
                 <div className={cx('container-right-mobile')}>
                     <Button fullWidth={true} variant="outlined" endIcon={<ArrowRightIcon />}>
                         View more
                     </Button>
                 </div>
-            </Container>
-        </section>
+            </div>
+        </Container>
     );
 };

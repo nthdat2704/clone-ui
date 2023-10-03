@@ -1,0 +1,33 @@
+.product {
+    &-list {
+        --spacing: 20px;
+        --column: 4;
+        --total-spacing: calc(calc(var(--column) - 1) * var(--spacing));
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing);
+    }
+
+    &-item {
+        width: calc(calc((100% - var(--total-spacing)) / var(--column))) !important;
+    }
+
+    @media screen and (max-width: 1023px) {
+        &-list {
+            --column: 3;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &-list {
+            --column: 2;
+            --spacing: 12px;
+            gap: var(--spacing);
+        }
+    }
+    @media screen and (max-width: 413px) {
+        &-list {
+            --column: 1;
+        }
+    }
+}

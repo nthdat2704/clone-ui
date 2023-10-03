@@ -1,26 +1,18 @@
-import React from 'react';
-import styles from './pet-seller.module.scss';
-import classNames from 'classnames/bind';
-import { Container } from '@/shared/components/container/container';
+import { hand } from '@/shared/assets/images';
 import { Button } from '@/shared/components/button/button';
+import { Container } from '@/shared/components/container/container';
 import { ArrowRightIcon, PlayIcon } from '@/shared/icons';
-import { brand1, brand2, brand3, brand4, brand5, brand6, brand7, hand } from '@/shared/assets/images';
+import { brands } from '@/shared/mockup';
+import classNames from 'classnames/bind';
 import Image from 'next/image';
+import styles from './pet-seller.module.scss';
 type PetSellerProps = {};
 const cx = classNames.bind(styles);
-const brands = [
-    { id: 1, imageUrl: brand1 },
-    { id: 2, imageUrl: brand2 },
-    { id: 3, imageUrl: brand3 },
-    { id: 4, imageUrl: brand4 },
-    { id: 5, imageUrl: brand5 },
-    { id: 6, imageUrl: brand6 },
-    { id: 7, imageUrl: brand7 },
-];
+
 export const PetSeller = (props: PetSellerProps) => {
     return (
-        <div className={cx('container')}>
-            <Container>
+        <Container className={cx('container')}>
+            <div className={cx('container-wrapper')}>
                 <div className={cx('heading')}>
                     <div className={cx('heading-left')}>
                         <span className={cx('title')}>Proud to be part of</span>
@@ -59,7 +51,7 @@ export const PetSeller = (props: PetSellerProps) => {
                     <div className={cx('block-left')}></div>
                     <div className={cx('block-right')}></div>
                 </div>
-            </Container>
-        </div>
+            </div>
+        </Container>
     );
 };
