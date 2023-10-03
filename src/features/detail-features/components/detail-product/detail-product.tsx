@@ -3,12 +3,12 @@ import { Container } from '@/shared/components/container/container';
 import classNames from 'classnames/bind';
 import { useState, useRef } from 'react';
 import styles from './detail-product.module.scss';
-import { Slider } from '../components/slider/Slider';
+import { SliderWithThumb } from '../slider-with-thumb/slider-with-thumb';
 import { sliders, productDetail, breadcrumbs, socialList } from '@/shared/mockup';
 import { AnimalCerfiticateIcon, HeartCerfiticateIcon, ShareIcon } from '@/shared/icons';
 import { BreadCrumbs } from '@/shared/components/breadcrumbs/breadcrumbs';
 import Link from 'next/link';
-import { HealthCerfiticate } from './component/health-cerfiticate';
+import { HealthCerfiticate } from '../health-cerfiticate/health-cerfiticate';
 type DetailProductProps = {};
 const cx = classNames.bind(styles);
 
@@ -17,7 +17,7 @@ export const DetailProduct = ({}: DetailProductProps) => {
         <Container>
             <div className={cx('container')}>
                 <div className={cx('slider')}>
-                    <Slider data={sliders} fullWidth={true} />
+                    <SliderWithThumb data={sliders} fullWidth={true} />
                     <HealthCerfiticate className={cx('health')} />
                     <div className={cx('social')}>
                         <div className={cx('social-heading')}>
