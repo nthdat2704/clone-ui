@@ -1,11 +1,11 @@
 import { Button } from '@/shared/components/button/button';
 import { Container } from '@/shared/components/container/container';
 import { ArrowRightIcon, PlayIcon } from '@/shared/icons';
-import { brands } from '@/shared/mockup';
 import classNames from 'classnames/bind';
 import Image from 'next/image';
 import { bannersImage } from '../../assets';
 import styles from './pet-seller.module.scss';
+import { brands } from '../../mockup';
 type PetSellerProps = {};
 const cx = classNames.bind(styles);
 

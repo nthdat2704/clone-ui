@@ -1,14 +1,12 @@
-import React from 'react';
-import styles from './banner.module.scss';
-import classNames from 'classnames/bind';
-import { Container } from '@/shared/components/container/container';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Button } from '@/shared/components/button/button';
-import { PlayIcon } from '@/shared/icons';
-import { dogs } from '@/shared/assets/images';
 import { BreadCrumbs } from '@/shared/components/breadcrumbs/breadcrumbs';
+import { Button } from '@/shared/components/button/button';
+import { Container } from '@/shared/components/container/container';
+import { PlayIcon } from '@/shared/icons';
 import { breadcrumbs } from '@/shared/mockup';
+import classNames from 'classnames/bind';
+import Image from 'next/image';
+import { bannerImage } from '../../assets/images';
+import styles from './banner.module.scss';
 
 type Props = {};
 const cx = classNames.bind(styles);
@@ -19,7 +17,7 @@ export const Banner = (props: Props) => {
             <BreadCrumbs data={breadcrumbs} />
             <div className={cx('banner')}>
                 <div className={cx('banner-left')}>
-                    <Image className={cx('banner-image')} src={dogs} alt="banner" />
+                    <Image className={cx('banner-image')} src={bannerImage.image1} alt="banner" />
                 </div>
                 <div className={cx('banner-right')}>
                     <h1 className={cx('banner-heading')}>One more friend</h1>

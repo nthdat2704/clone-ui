@@ -1,4 +1,4 @@
-import { RedIcon, ApricotIcon, BlackIcon, BlackAndWhiteIcon, SilverIcon, TanIcon } from '../icons';
+import { RedIcon, ApricotIcon, BlackIcon, BlackAndWhiteIcon, SilverIcon, TanIcon } from '../../../shared/icons';
 export const filters = [
     {
         heading: 'Gender',

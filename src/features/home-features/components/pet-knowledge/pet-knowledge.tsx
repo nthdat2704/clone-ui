@@ -1,10 +1,10 @@
 import { Button } from '@/shared/components/button/button';
 import { Container } from '@/shared/components/container/container';
 import { ArrowRightIcon } from '@/shared/icons';
-import { news } from '@/shared/mockup';
 import classNames from 'classnames/bind';
 import { Card } from '../card/card';
 import styles from './pet-knowledge.module.scss';
+import { news } from '../../mockup';
 type PetKnowledgeProps = {};
 
 const cx = classNames.bind(styles);

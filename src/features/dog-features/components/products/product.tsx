@@ -2,10 +2,12 @@ import { Button } from '@/shared/components/button/button';
 import { Card } from '@/shared/components/card/card';
 import { Container } from '@/shared/components/container/container';
 import { FilterIcon } from '@/shared/icons';
-import { filters, products } from '@/shared/mockup';
+import { products } from '@/shared/mockup';
 import classNames from 'classnames/bind';
-import { FilterGroup } from './components/filter-group/filter-group';
-import { Sort } from './components/sort/sort';
+
+import { filters } from '../../mockup';
+import { FilterGroup } from '../filter-group/filter-group';
+import { Sort } from '../sort/sort';
 import styles from './product.module.scss';
 type ProductProps = {};
 const cx = classNames.bind(styles);

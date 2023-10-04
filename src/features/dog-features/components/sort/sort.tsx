@@ -1,8 +1,7 @@
-import React from 'react';
+import { Button } from '@/shared/components/button/button';
+import { ArrowDownFilterIcon } from '@/shared/icons';
 import classNames from 'classnames/bind';
 import styles from './sort.module.scss';
-import { ArrowDownFilterIcon } from '@/shared/icons';
-import { Button } from '@/shared/components/button/button';
 type SortProps = {};
 const cx = classNames.bind(styles);
 export const Sort = (props: SortProps) => {
