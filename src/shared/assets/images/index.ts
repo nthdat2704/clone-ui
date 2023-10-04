@@ -14,7 +14,6 @@ import animal6 from './animal-6.png'
 import animal7 from './animal-7.png'
 import animal8 from './animal-8.png'
 import animal9 from './animal-9.png'
-import bannerOneMore from './banner-one-more.png'
 import bannerPet from './banner-pet-seller.png'
 import dogs from './dogs.png'
 import human from './human.png'
@@ -24,7 +23,7 @@ export {
     animal1, animal10, animal11,
     animal12, animal13, animal14, animal15,
     animal16, animal2, animal3, animal4, animal5,
-    animal6, animal7, animal8, animal9, bannerOneMore,
+    animal6, animal7, animal8, animal9,
     bannerPet, dogs, human,
 }
 

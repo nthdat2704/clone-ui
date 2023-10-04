@@ -2,8 +2,8 @@ import { Container } from '@/shared/components/container/container';
 import classNames from 'classnames/bind';
 import React from 'react';
 import styles from './out-lovely-customer.module.scss';
-import { ourSliders } from '@/shared/mockup';
 import { Slider } from '../slider/slider';
+import { ourSliders } from '../../mockup';
 type OutLovelyCustomerProps = {};
 
 const cx = classNames.bind(styles);
