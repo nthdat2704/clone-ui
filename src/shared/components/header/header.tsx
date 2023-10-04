@@ -1,12 +1,12 @@
-import classNames from 'classnames/bind';
-import { Container } from '../container/container';
-import logo from '@/shared/assets/images/logo.png';
-import styles from './header.module.scss';
-import Image from 'next/image';
+import { commonImage } from '@/shared/assets/images';
 import { routes } from '@/shared/constants';
-import { Input } from '../input/input';
 import { ArrowDownIcon, CartICon, FlagIcon, HeartIcon, MenuIcon, SearchIcon, SearchIconHeader } from '@/shared/icons';
+import classNames from 'classnames/bind';
+import Image from 'next/image';
 import { Button } from '../button/button';
+import { Container } from '../container/container';
+import { Input } from '../input/input';
+import styles from './header.module.scss';
 type HeaderProps = {};
 
 const cx = classNames.bind(styles);
@@ -18,7 +18,7 @@ export const Header = (props: HeaderProps) => {
                 <div className={cx('header__content')}>
                     <div className={cx('header__left')}>
                         <div className={cx('logo')}>
-                            <Image src={logo} alt="logo" />
+                            <Image src={commonImage.logo} alt="logo" />
                         </div>
                         <ul className={cx('menu__list')}>
                             {routes.map((item) => {
@@ -76,7 +76,7 @@ export const Header = (props: HeaderProps) => {
                         <MenuIcon />
                     </span>
                     <div className={cx('logo')}>
-                        <Image src={logo} alt="logo" />
+                        <Image src={commonImage.logo} alt="logo" />
                     </div>
                     <span className="icon">
                         <SearchIconHeader />

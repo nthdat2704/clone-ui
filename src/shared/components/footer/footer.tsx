@@ -1,13 +1,12 @@
+import { commonImage } from '@/shared/assets/images';
+import { socialList } from '@/shared/mockup';
 import classNames from 'classnames/bind';
-import styles from './footer.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '../button/button';
 import { Container } from '../container/container';
 import { Input } from '../input/input';
-import { Button } from '../button/button';
-import Link from 'next/link';
-import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from '@/shared/icons';
-import Image from 'next/image';
-import logo from '@/shared/assets/images/logo.png';
-import { socialList } from '@/shared/mockup';
+import styles from './footer.module.scss';
 type FooterProps = {};
 
 const cx = classNames.bind(styles);
@@ -61,7 +60,7 @@ export const Footer = (props: FooterProps) => {
                 <div className={cx('container-bottom')}>
                     <div className={cx('copyright')}>© 2022 Monito. All rights reserved.</div>
                     <div className={cx('logo')}>
-                        <Image src={logo} alt="logo" />
+                        <Image src={commonImage.logo} alt="logo" />
                     </div>
                     <div className={cx('privacy')}>
                         <span>Terms of Service</span>
