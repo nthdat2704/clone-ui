@@ -1,6 +1,7 @@
-export const routes = [
-  { title: "Home", url: "/" },
-  { title: "Category", url: "/category" },
-  { title: "About", url: "/about" },
-  { title: "Contact", url: "/contact" },
-];
+export const ROUTER = {
+  Home: '/',
+  Category: '/category',
+  Detail: '/detail',
+  About: '/detail',
+  Contact: '/contact'
+}

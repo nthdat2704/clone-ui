@@ -3,6 +3,8 @@ import React from 'react';
 import { Card } from '../card/card';
 import classNames from 'classnames/bind';
 import styles from './list-product.module.scss';
+import Link from 'next/link';
+import { ROUTER } from '@/shared/constants';
 type ListProductItem = {
     id: number;
     imageUrl: StaticImageData;
@@ -22,7 +24,7 @@ export const ListProduct = ({ data = [], className }: ListProductProps) => {
     return (
         <div className={classes}>
             {data.map((item) => {
-                return <Card fullWidth={true} className={cx('product-item')} data={item} />;
+                return <Card className={cx('product-item')} fullWidth={true} data={item} />;
             })}
         </div>
     );

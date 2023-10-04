@@ -1,5 +1,5 @@
-import { Banner } from '@/features/dog-features/components/banner/banner';
-import { Product } from '@/features/dog-features/components/products/product';
+import { Banner } from '@/features/category-features/components/banner/banner';
+import { Product } from '@/features/category-features/components/products/product';
 import { MainLayout } from '@/shared/layouts/main-layout/main-layout';
 import React from 'react';
 
