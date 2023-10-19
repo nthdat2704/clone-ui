@@ -17,7 +17,7 @@ type SliderProps = {
     data: SliderItem[];
 };
 const cx = classNames.bind(styles);
-export const Slider = ({ data }: SliderProps) => {
+const Slider = ({ data }: SliderProps) => {
     const classes = cx('slider');
     return (
         <div className={classes}>
@@ -40,3 +40,4 @@ export const Slider = ({ data }: SliderProps) => {
         </div>
     );
 };
+export default Slider;
