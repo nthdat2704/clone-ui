@@ -26,9 +26,9 @@ export const Detail = ({ data = [] }: DetailProps) => {
                 </Button>
             </div>
             <div className={cx('product-detail')}>
-                {data.map((item: DetailItem) => {
+                {data.map((item: DetailItem, index) => {
                     return (
-                        <div className={cx('product-row-group')}>
+                        <div key={index} className={cx('product-row-group')}>
                             <p className={cx('product-heading')}>{item.heading}</p>
                             <p className={cx('product-desc')}>{item.desc}</p>
                         </div>

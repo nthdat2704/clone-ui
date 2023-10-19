@@ -24,8 +24,8 @@ export const PetKnowledge = (props: PetKnowledgeProps) => {
                     </div>
                 </div>
                 <div className={cx('content')}>
-                    {news.map((item) => {
-                        return <Card data={item} fullWidth={true} className={cx('product')} />;
+                    {news.map((item, index) => {
+                        return <Card key={index} data={item} fullWidth={true} className={cx('product')} />;
                     })}
                 </div>
                 <Button

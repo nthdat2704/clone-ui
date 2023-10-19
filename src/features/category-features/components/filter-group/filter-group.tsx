@@ -20,8 +20,8 @@ export const FilterGroup = ({ data }: FilterGroupProps) => {
         <div className={cx('filter-group')}>
             <div className={cx('filter-sub-heading')}>{data?.heading}</div>
             <div className={cx('filter-select')}>
-                {data?.children.map((item) => {
-                    return <CheckBox label={item.text} slot={item.icon} checked={item.checked} />;
+                {data?.children.map((item, index) => {
+                    return <CheckBox key={index} label={item.text} slot={item.icon} checked={item.checked} />;
                 })}
             </div>
         </div>

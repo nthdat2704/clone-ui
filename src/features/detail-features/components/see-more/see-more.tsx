@@ -17,8 +17,8 @@ export const SeeMore = (props: SeeMoreProps) => {
                         <div className={cx('see-more-sub-heading')}>See more puppies</div>
                     </div>
                     <div className={cx('see-more-content')}>
-                        {products.map((item) => {
-                            return <Card fullWidth={true} className={cx('see-more-item')} data={item} />;
+                        {products.map((item, index) => {
+                            return <Card key={index} fullWidth={true} className={cx('see-more-item')} data={item} />;
                         })}
                     </div>
                 </div>

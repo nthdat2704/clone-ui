@@ -22,9 +22,9 @@ export const Social = ({ data }: SocialProps) => {
                 Share:
             </div>
             <ul className={cx('social-list')}>
-                {data.map((item) => {
+                {data.map((item, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             <Link className={cx('social-item')} href={item.url}>
                                 {item.icon}
                             </Link>

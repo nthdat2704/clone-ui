@@ -18,9 +18,9 @@ export const BreadCrumbs = ({ data = [], className }: BreadCrumbsProps) => {
     });
     return (
         <ul className={classes}>
-            {data.map((item) => {
+            {data.map((item, index) => {
                 return (
-                    <li className={cx('breadcrumbs-item')}>
+                    <li key={index} className={cx('breadcrumbs-item')}>
                         <Link href={item.url}>{item.text}</Link>
                     </li>
                 );

@@ -25,9 +25,9 @@ export const PetSeller = (props: PetSellerProps) => {
                     </div>
                 </div>
                 <div className={cx('brand-logo')}>
-                    {brands.map((item) => {
+                    {brands.map((item, index) => {
                         return (
-                            <div className={cx('brand-logo-wrapper')}>
+                            <div key={index} className={cx('brand-logo-wrapper')}>
                                 <Image src={item.imageUrl} alt="brand" />
                             </div>
                         );

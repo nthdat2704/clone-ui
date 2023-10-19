@@ -42,9 +42,9 @@ export const SliderWithThumb = ({ data = [], fullWidth = false, className }: Sli
                 modules={[FreeMode, Navigation, Thumbs]}
                 className={cx('slider-swiper-main')}
             >
-                {data.map((item: SliderWithThumbItem) => {
+                {data.map((item: SliderWithThumbItem, index) => {
                     return (
-                        <SwiperSlide key={item.id}>
+                        <SwiperSlide key={index}>
                             <Image src={item.imageUrl} alt={item.alt} />
                         </SwiperSlide>
                     );
@@ -65,9 +65,9 @@ export const SliderWithThumb = ({ data = [], fullWidth = false, className }: Sli
                 modules={[FreeMode, Navigation, Thumbs]}
                 className={cx('slider-swiper-thumb')}
             >
-                {data.map((item: SliderWithThumbItem) => {
+                {data.map((item: SliderWithThumbItem, index) => {
                     return (
-                        <SwiperSlide className={cx('slider-thumb')}>
+                        <SwiperSlide key={index} className={cx('slider-thumb')}>
                             <Image src={item.imageUrl} alt={item.alt} />
                         </SwiperSlide>
                     );

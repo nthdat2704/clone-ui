@@ -29,9 +29,9 @@ export const Slider = ({ data }: SliderProps) => {
                 }}
                 modules={[Pagination]}
             >
-                {data.map((item) => {
+                {data.map((item, index) => {
                     return (
-                        <SwiperSlide className={cx('slider-item')}>
+                        <SwiperSlide key={index} className={cx('slider-item')}>
                             <Image key={item.id} src={item.imageUrl} alt={item.alt} />
                         </SwiperSlide>
                     );

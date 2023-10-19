@@ -23,8 +23,8 @@ export const ListProduct = ({ data = [], className }: ListProductProps) => {
     });
     return (
         <div className={classes}>
-            {data.map((item) => {
-                return <Card className={cx('product-item')} fullWidth={true} data={item} />;
+            {data.map((item, index) => {
+                return <Card key={index} className={cx('product-item')} fullWidth={true} data={item} />;
             })}
         </div>
     );

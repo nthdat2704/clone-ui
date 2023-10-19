@@ -24,9 +24,9 @@ export const Header = (props: HeaderProps) => (
                         </Link>
                     </div>
                     <ul className={cx('menu__list')}>
-                        {menuList.map((item) => {
+                        {menuList.map((item, index) => {
                             return (
-                                <li className={cx('menu__item')} key={item.title}>
+                                <li className={cx('menu__item')} key={index}>
                                     <Link href={item.url}>{item.title}</Link>
                                 </li>
                             );

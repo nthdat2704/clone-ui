@@ -16,8 +16,8 @@ export const Product = (props: ProductProps) => {
         <Container className={cx('container')}>
             <div className={cx('filter')}>
                 <h3 className={cx('filter-heading')}>Filter</h3>
-                {filters.map((item) => {
-                    return <FilterGroup data={item} />;
+                {filters.map((item, index) => {
+                    return <FilterGroup key={index} data={item} />;
                 })}
             </div>
             <div className={cx('filter-mobile')}>
@@ -37,8 +37,8 @@ export const Product = (props: ProductProps) => {
                     </div>
                 </div>
                 <div className={cx('products-bottom')}>
-                    {products.map((item) => {
-                        return <Card className={cx('product')} fullWidth={true} data={item} />;
+                    {products.map((item, index) => {
+                        return <Card key={index} className={cx('product')} fullWidth={true} data={item} />;
                     })}
                 </div>
             </div>

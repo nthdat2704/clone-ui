@@ -34,9 +34,9 @@ export const Footer = (props: FooterProps) => {
                     </div>
                     <div className={cx('contact')}>
                         <ul className={cx('contact-left')}>
-                            {contactList.map((item) => {
+                            {contactList.map((item, index) => {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <Link className={cx('contact-item')} href={item.url}>
                                             {item.name}
                                         </Link>
@@ -45,9 +45,9 @@ export const Footer = (props: FooterProps) => {
                             })}
                         </ul>
                         <ul className={cx('contact-right')}>
-                            {socialList.map((item) => {
+                            {socialList.map((item, index) => {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <Link className={cx('contact-social')} href={item.url}>
                                             {item.icon}
                                         </Link>
