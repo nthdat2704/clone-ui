@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import React from 'react';
 import styles from './out-lovely-customer.module.scss';
 import { ourSliders } from '../../mockup';
-import Slider from '../slider/slider';
+import Slider from './../slider/slider';
 type OutLovelyCustomerProps = {};
 
 const cx = classNames.bind(styles);
