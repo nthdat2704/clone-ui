@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 // import required modules
-import { animal1, animal10, animal11 } from '@/shared/assets/images';
 import { NextIcon, PrevIcon } from '@/shared/icons';
 import Image, { StaticImageData } from 'next/image';
 import { useRef, useState } from 'react';
@@ -38,6 +37,7 @@ export const SliderWithThumb = ({ data = [], fullWidth = false, className }: Sli
                     prevEl: prevRef.current,
                     nextEl: nextRef.current,
                 }}
+                //@ts-ignore
                 thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                 modules={[FreeMode, Navigation, Thumbs]}
                 className={cx('slider-swiper-main')}
@@ -57,6 +57,7 @@ export const SliderWithThumb = ({ data = [], fullWidth = false, className }: Sli
                 </div>
             </Swiper>
             <Swiper
+                //@ts-ignore
                 onSwiper={setThumbsSwiper}
                 spaceBetween={12}
                 slidesPerView={'auto'}
